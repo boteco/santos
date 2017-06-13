@@ -5,8 +5,8 @@
 
 	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
 	<skin_settings maps="true"
-	               maps_type="google"
-	               maps_bing_api_key=""
+	               maps_type="bing"
+	               maps_bing_api_key="AlAFI0Kx9Ei1qFjjVCJM2YXrzDoDisj0VevfivIkreG8P_Pkw1BMRqmotIob62bK"
 	               maps_google_api_key=""
 	               maps_zoombuttons="false"
 	               gyro="true"
