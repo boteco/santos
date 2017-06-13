@@ -74,127 +74,30 @@
 		if(startactions !== null, startactions() );
 	</action>
 
+	<action name="do_crop_animation">
+		<!-- add attributes to the hotspot -->
+		registerattribute(xframes, calc((imagewidth / %1) BOR 0));
+		registerattribute(yframes, calc((imageheight / %2) BOR 0));
+		registerattribute(frames, calc(xframes * yframes));
+		registerattribute(frame, 0);
 
-	
-	<scene name="scene_7" title="7" onstart="" havevrimage="true" thumburl="panos/7.tiles/thumb.jpg" lat="38.69455556" lng="-9.37086111" heading="0.0">
+		set(crop, '0|0|%1|%2');
 
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/7.tiles/preview.jpg" />
-
-		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512" if="!webvr.isenabled">
-			<level tiledimagewidth="2560" tiledimageheight="2560">
-				<cube url="panos/7.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="1280" tiledimageheight="1280">
-				<cube url="panos/7.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="640" tiledimageheight="640">
-				<cube url="panos/7.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
-			</level>
-		</image>
-
-		<image if="webvr.isenabled">
-			<cube url="panos/7.tiles/vr/pano_%s.jpg" />
-		</image>
-
-	</scene>
-
-	<scene name="scene_8" title="8" onstart="" havevrimage="true" thumburl="panos/8.tiles/thumb.jpg" lat="38.69453704" lng="-9.37090278" heading="0.0">
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/8.tiles/preview.jpg" />
-
-		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512" if="!webvr.isenabled">
-			<level tiledimagewidth="2560" tiledimageheight="2560">
-				<cube url="panos/8.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="1280" tiledimageheight="1280">
-				<cube url="panos/8.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="640" tiledimageheight="640">
-				<cube url="panos/8.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
-			</level>
-		</image>
-
-		<image if="webvr.isenabled">
-			<cube url="panos/8.tiles/vr/pano_%s.jpg" />
-		</image>
-
-	</scene>
-
-	<scene name="scene_9" title="9" onstart="" havevrimage="true" thumburl="panos/9.tiles/thumb.jpg" lat="38.69450000" lng="-9.37090278" heading="0.0">
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/9.tiles/preview.jpg" />
-
-		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512" if="!webvr.isenabled">
-			<level tiledimagewidth="2560" tiledimageheight="2560">
-				<cube url="panos/9.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="1280" tiledimageheight="1280">
-				<cube url="panos/9.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="640" tiledimageheight="640">
-				<cube url="panos/9.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
-			</level>
-		</image>
-
-		<image if="webvr.isenabled">
-			<cube url="panos/9.tiles/vr/pano_%s.jpg" />
-		</image>
-
-	</scene>
-
-	<scene name="scene_10" title="10" onstart="" havevrimage="true" thumburl="panos/10.tiles/thumb.jpg" lat="38.69447222" lng="-9.37083333" heading="0.0">
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/10.tiles/preview.jpg" />
-
-		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512" if="!webvr.isenabled">
-			<level tiledimagewidth="2560" tiledimageheight="2560">
-				<cube url="panos/10.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="1280" tiledimageheight="1280">
-				<cube url="panos/10.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="640" tiledimageheight="640">
-				<cube url="panos/10.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
-			</level>
-		</image>
-
-		<image if="webvr.isenabled">
-			<cube url="panos/10.tiles/vr/pano_%s.jpg" />
-		</image>
-
-	</scene>
-
-	<scene name="scene_11" title="11" onstart="" havevrimage="true" thumburl="panos/11.tiles/thumb.jpg" lat="38.69444444" lng="-9.37077778" heading="0.0">
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/11.tiles/preview.jpg" />
-
-		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512" if="!webvr.isenabled">
-			<level tiledimagewidth="2560" tiledimageheight="2560">
-				<cube url="panos/11.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="1280" tiledimageheight="1280">
-				<cube url="panos/11.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
-			</level>
-			<level tiledimagewidth="640" tiledimageheight="640">
-				<cube url="panos/11.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
-			</level>
-		</image>
-
-		<image if="webvr.isenabled">
-			<cube url="panos/11.tiles/vr/pano_%s.jpg" />
-		</image>
-
-	</scene>
+		setinterval(calc('crop_anim_' + name), calc(1.0 / %3),
+			if(loaded,
+				inc(frame);
+				if(frame GE frames, if(onlastframe !== null, onlastframe() ); set(frame,0); );
+				mod(xpos, frame, xframes);
+				div(ypos, frame, xframes);
+				Math.floor(ypos);
+				mul(xpos, %1);
+				mul(ypos, %2);
+				calc(crop, xpos + '|' + ypos + '|%1|%2');
+			  ,
+				clearinterval(calc('crop_anim_' + name));
+			  );
+		  );
+	</action>
 
 	<scene name="scene_1" title="1" onstart="" havevrimage="true" thumburl="panos/1.tiles/thumb.jpg" lat="38.69461111" lng="-9.37069444" heading="0.0">
 
@@ -336,6 +239,126 @@
 
 		<image if="webvr.isenabled">
 			<cube url="panos/6.tiles/vr/pano_%s.jpg" />
+		</image>
+
+	</scene>
+	
+	<scene name="scene_7" title="7" onstart="updateradar();" havevrimage="true" thumburl="panos/7.tiles/thumb.jpg" lat="38.69455556" lng="-9.37086111" heading="0.0">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/7.tiles/preview.jpg" />
+
+		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="2560" tiledimageheight="2560">
+				<cube url="panos/7.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1280" tiledimageheight="1280">
+				<cube url="panos/7.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="640" tiledimageheight="640">
+				<cube url="panos/7.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/7.tiles/vr/pano_%s.jpg" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_8" title="8" onstart="" havevrimage="true" thumburl="panos/8.tiles/thumb.jpg" lat="38.69453704" lng="-9.37090278" heading="0.0">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/8.tiles/preview.jpg" />
+
+		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="2560" tiledimageheight="2560">
+				<cube url="panos/8.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1280" tiledimageheight="1280">
+				<cube url="panos/8.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="640" tiledimageheight="640">
+				<cube url="panos/8.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/8.tiles/vr/pano_%s.jpg" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_9" title="9" onstart="" havevrimage="true" thumburl="panos/9.tiles/thumb.jpg" lat="38.69450000" lng="-9.37090278" heading="0.0">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/9.tiles/preview.jpg" />
+
+		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="2560" tiledimageheight="2560">
+				<cube url="panos/9.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1280" tiledimageheight="1280">
+				<cube url="panos/9.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="640" tiledimageheight="640">
+				<cube url="panos/9.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/9.tiles/vr/pano_%s.jpg" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_10" title="10" onstart="" havevrimage="true" thumburl="panos/10.tiles/thumb.jpg" lat="38.69447222" lng="-9.37083333" heading="0.0">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/10.tiles/preview.jpg" />
+
+		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="2560" tiledimageheight="2560">
+				<cube url="panos/10.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1280" tiledimageheight="1280">
+				<cube url="panos/10.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="640" tiledimageheight="640">
+				<cube url="panos/10.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/10.tiles/vr/pano_%s.jpg" />
+		</image>
+
+	</scene>
+
+	<scene name="scene_11" title="11" onstart="" havevrimage="true" thumburl="panos/11.tiles/thumb.jpg" lat="38.69444444" lng="-9.37077778" heading="0.0">
+
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/11.tiles/preview.jpg" />
+
+		<image type="CUBE" prealign="0|0.0|0" multires="true" tilesize="512" if="!webvr.isenabled">
+			<level tiledimagewidth="2560" tiledimageheight="2560">
+				<cube url="panos/11.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1280" tiledimageheight="1280">
+				<cube url="panos/11.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="640" tiledimageheight="640">
+				<cube url="panos/11.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+		</image>
+
+		<image if="webvr.isenabled">
+			<cube url="panos/11.tiles/vr/pano_%s.jpg" />
 		</image>
 
 	</scene>
